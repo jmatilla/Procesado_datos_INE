@@ -95,32 +95,5 @@ names(censo_def) <- gsub(names(censo_def), pattern = ' a ', replacement = '_')
 censo_secs <- left_join(secs, censo_def, by=c('CPRO'='cod_prov'))
 
 #Exportamos en geojson
-sf::st_write(censo_secs, 'censo_secs.geojson')                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
+sf::st_write(censo_secs, 'censo_secs.geojson')                                
                                             
